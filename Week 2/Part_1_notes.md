@@ -34,7 +34,7 @@ To make everyone's lives much easier, I've created an html template in `starter_
 Whenever you start a new page, I suggest copy-pasting the entire `template` folder, renaming it, and then opening your new `index.html` and `css/style.css` in sublime. Then, just add html inside of the `<body>` tag in `index.html`, and add your custom CSS rules to the bottom of `css/style.css`. This way, you won't have to battle typos in your `<link>` tags, or worry about including the proper DOCTYPE declaration.
 
 ##Box Model
-Demo code: `starter_code/lesson 1/box_model`, and also in
+Demo code: [starter_code/lesson_1/box_model](starter_code/lesson_1/box_model), and also in
 [this codepen](http://codepen.io/nevan/pen/vtorn).
 
 Read through `index.html`, and then `css/style.css`. You'll see that there are many CSS rules surrounded in comments. Remove the comment tags to include the CSS, one line at a time, to see the changes rendered by chrome. Read about comments [here at MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments). 
@@ -45,7 +45,7 @@ When you're done uncommenting all lines, try implementing the suggested CSS chan
  
 
 ##Nested Selectors
-Demo code: `starter_code/lesson 1/nested_selectors` and [this codepen](http://codepen.io/nevan/pen/gFAfh).
+Demo code: [starter_code/lesson_1/nested_selectors](starter_code/lesson_1/nested_selectors) and [this codepen](http://codepen.io/nevan/pen/gFAfh).
 
 First, let's find out what the DOM is. [Here's a good video explaining it](http://www.lynda.com/HTML-tutorials/What-Document-Object-Model-DOM/122462/137616-4.html).
 
@@ -79,6 +79,6 @@ How would you write a CSS rule which applies to the `<a href='selectme.html'>` t
 
 ##Fashion Blog
 
-Let's code! Look in `starter_code/lesson 1/fashion_blog_part1`. Open `Fashion Blog - Final Product.png`, this is what we want our page to look like. Then, open `index.html` and `css/style.css`, and see how close you can get it!
+Let's code! Look in [starter_code/lesson_1/fashion_blog_part1](starter_code/lesson_1/fashion_blog_part1). Open `Fashion Blog - Final Product.png`, this is what we want our page to look like. Then, open `index.html` and `css/style.css`, and see how close you can get it!
 
-Solution is in `solutions/fashion_blog_part1`.
+Solution is in [solutions/fashion_blog_part1](solutions/fashion_blog_part1).

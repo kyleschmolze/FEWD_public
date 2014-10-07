@@ -23,7 +23,7 @@
 
 
 ##Classes and IDs
-Demo code: [starter_code/lesson 2/ids_and_classes](starter_code/lesson 2/ids_and_classes), and also in
+Demo code: [starter_code/lesson_2/ids_and_classes](starter_code/lesson_2/ids_and_classes), and also in
 [this codepen](http://codepen.io/nevan/pen/JnfEd).
 
 Read about IDs and Classes [here](http://css-tricks.com/the-difference-between-id-and-class/).
@@ -39,7 +39,7 @@ Want more CSS fun? Try this game: http://flukeout.github.io/
 
 
 ## Floating Sections
-Demo code: `starter_code/lesson 2/floats`, and also in
+Demo code: [starter_code/lesson_2/floats](starter_code/lesson_2/floats), and also in
 [this codepen](http://codepen.io/nevan/pen/nHIEo).
 
 Read through the sample code, try experimenting with the width percentages in `css/style.css`. Nathan also found a great explanation of floats [here](http://alistapart.com/article/css-floats-101). 
@@ -49,6 +49,6 @@ You can (almost) use this exact overall layout in the lab / homework for today, 
 
 ##Lab/Homework: Fashion Blog Part 2
 
-Take the page you were working on for Fashion Blog Part 1, and now style it to look like `starter_code/lesson 2/fashion_blog_part2/Fashion Blog - Part 2 Final Product.png`.
+Take the page you were working on for Fashion Blog Part 1, and now style it to look like `Fashion Blog - Part 2 Final Product.png` in [starter_code/lesson_2/fashion_blog_part2](starter_code/lesson_2/fashion_blog_part2/).
 
 Plan before you code! Try to figure out what boxes will contain which divs, and roadmap your html document before you start coding.
