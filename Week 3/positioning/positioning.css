@@ -1,0 +1,19 @@
+.outer {
+	width: 800px;
+	height: 400px;
+	margin: 10px auto;
+	background: #9FE4E7;
+}
+
+.inner {
+	width: 200px;
+	height: 200px;
+	background: rgb(253, 89, 89);
+}
+
+.spacer {
+	height: 700px;
+	width: 300px;
+	margin: 40px auto;
+	background: black;
+}

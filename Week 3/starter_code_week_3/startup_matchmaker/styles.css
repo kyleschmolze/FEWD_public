@@ -1,0 +1,23 @@
+.img-container {
+	margin: 50px auto;
+	width: 600px;
+	height:300px;
+	border: 1px solid #333;
+
+	/* Important part down here: */
+	background-image: url(images/coworking.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+header nav {
+	text-align: right;
+}
+
+header nav a {
+	color: white;
+}
+
+.sidebar {
+	background: rgba(255, 255, 255, 0.8);
+}
