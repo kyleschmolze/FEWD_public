@@ -35,6 +35,7 @@ The `display` property can take 4 values:
 * __inline-block__
 * __none__
 
+`span`s are always `display: inline;`. `div`s are always `display: block;`.
 
 You can't apply width to inline elements, it doesn't do anything!
 
