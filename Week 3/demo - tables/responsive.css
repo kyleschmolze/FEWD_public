@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+
+.toolbar {
+	background: #eee;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+
+}
+
+.col {
+	float: left;
+	width: 33.3%;
+	height: 300px;
+	padding: 15px;
+	border-left: 1px solid grey;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.col {
+	width: 100%;
+}
+
+h1 {
+	font-size:28px;
+}
+
+h2 {
+	font-size:20px;
+}
+
+
+small {
+	font-size: 0.85em;
+}
+
+@media only screen and (min-width: 768px) {
+
+	h1 {
+		font-size:22px;
+	}
+
+	.col {
+		width: 100%;
+	}
+	body {
+		background: green;
+		color: white;
+		text-decoration: underline;
+	}
+
+	.toolbar {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
