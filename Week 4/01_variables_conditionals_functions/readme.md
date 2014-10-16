@@ -53,12 +53,6 @@ Simple answer: We want high performance web sites!
 
 ## Let's buy a beer!
 
-* Open these files in Sublime:
-	* `starter_code/milkshake/milkshake.html`
-	* `starter_code/milkshake/milkshake.js`
-* Also open `starter_code/milkshake/milkshake.html` in Chrome.
-
-
 
 #### Alerts and Logging
 
@@ -151,7 +145,7 @@ Ok, so we can already write some pretty cool code that actually does stuff. Let'
 		
 		var total_cash = x + (y / 4);
 		
-			if(total_cash < 5) {
+		if(total_cash < 5) {
 			console.log("Sorry, can't afford a beer.");
 		} else {
 			console.log("You have enough money! Drink up!");
@@ -207,7 +201,9 @@ Let's walk through the code (like a robot), keeping in mind to always evaluate t
 5. Store whatever was *returned* by `convertQuartersToDollars` into a variable called `total_cash`. 
 6. Log some output back to the user.
 
-## Exercise: The World Translator
+## Exercises!
+
+#### Exercise 1: The World Translator
 
 * Write a function named helloWorld that:
 	* takes 1 argument, a language code (e.g. "es", "de", "en").
@@ -216,6 +212,14 @@ Let's walk through the code (like a robot), keeping in mind to always evaluate t
 * Call that function for each of the supported languages and log the result to make sure it works.
 
 
+ 
+#### Exercise 2: Max value
+
+Write a program which prompts the user for 3 numbers, and then logs the highest value of the three.
+
+**Advanced:**
+
+Max and min: Make your program take 5 numbers, and have it log both the highest and lowest value.
 
 
 
