@@ -4,6 +4,8 @@
 * Be able to use various JS data types
 * Be able to manipulate JS Arrays and Objects
  
+## Final Project!
+Check the `Final Project` folder. Proposals are due in 2 weeks.
 
 ## Comments in Javascript:
 
@@ -219,9 +221,8 @@ Notes:
 	obj2 = { "key": "value" }
 	```
 	
-## Exercises!
 
-#### Exercise 1: John Doe
+## Exercise: John Doe
 
 Let's say we had some data about this guy John:
 
@@ -241,12 +242,65 @@ What if you had 5 people? Maybe you should think about using an array, too...
 
 * How would you ask for the 3rd person's age?
 
-#### Exercise 2: Reverse the Input
+## For loops
+
+Remember this guy?
+
+	function hasEnoughCash() {
+		var x = prompt("How much cash do you have?");
+		var y = prompt("How many quarters do you have?");
+		
+		var total_cash = x + (y / 4);
+		
+		if(total_cash < 5) {
+			console.log("Sorry, can't afford a beer.");
+		} else {
+			console.log("You have enough money! Drink up!");
+		}
+	}
+	
+	hasEnoughCash();
+	hasEnoughCash();
+	hasEnoughCash();
+	hasEnoughCash();
+	hasEnoughCash();
+	
+This doesn't seem particularly DRY (don't repeat yourself). How can we tell the computer to "do this 5 times"?
+
+	for(var i = 0; i < 5; i++) {
+		hasEnoughCash();
+	}
+
+That's it! The syntax is really weird, I know. But note the `5`, that means "Do this 5 times".
+
+## Exercise
+
+Implement a for loop that alerts "You're the bomb." 3 times.
+
+**Advanced**
+
+Prompt the user for a number, then alert "You're the bomb" *that* number of times. (Hint: Keep an eye on the `5` in the for loop.)
+
+## While loops
+
+They're just like a for loop, but instead of doing something *n number of times*, they just *keep looping while the conditional is true*.
+
+	var input = "";
+	while(input == "") {
+		input = prompt("What's your favorite number?");
+	}
+	
+	alert(input);
+
+
+## Exercises!
+
+#### Exercise 1: Reverse the Input
 
 Write a program which prompts for 5 strings, and then logs them back out in reverse. You must use an array, and the `reverse` method.
 
 
-#### Exercise 3 (advanced): Rock paper scissors
+#### Exercise 2 (advanced): Rock paper scissors
 
 Write a program that plays rocks, paper, scissors!
 
