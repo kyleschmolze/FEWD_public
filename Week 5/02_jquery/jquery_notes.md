@@ -114,16 +114,11 @@ Everything you need to know is here:
 
 ## Cash Register
  
-Create a cash register page which takes in prices from an input, then adds them do the page using jQuery, and adds up the total of all the prices. 
+####Step 1
+Create a cash register page which takes in prices from an input, then adds them do the page using jQuery, and adds up the total of all the prices. Starter code is in `code/cash_register`
 
-**Advanced**: Create 2 inputs, one for the name of the item, one for the price. Render the items and prices on the receipt.
- 
-####Instructional Design Notes
+####Step 2
+Create 2 inputs, one for the name of the item, one for the price. Render the items and prices on the receipt.
 
-*	Demo the final version before starting the code along.
-*	We found it helps to discuss / write the pseudo code for the application before starting to code.
-*	Refactor the exercise to use anonymous functions 
-	*	Anonymous functions are included because we want students to be able to understand jQuery documentation.
-
-
-
+####Advanced
+Use an array to keep track of all elements. Add a "-" button next to each item to remove the item from the receipt, which also updates the total correctly.
