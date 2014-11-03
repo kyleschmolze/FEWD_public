@@ -45,15 +45,37 @@ Actually put an `h1` on the page when a player wins. Watch out: what happens whe
 
 Make your game as cool / pretty / challenging as you want! We'll break in groups based on features that you want to build, and each group should plan their feature together outloud, and help each other write the code to make it work!
 
-Here are some great features you could add to yours:
+## Homework
+
+Here are the required features to be completed for homework this week:
+
+- Announce the winner in an `h1` on the page.
+- Write some custom CSS, make it look cool!
+- Don't use a table at all.
+  - Instead of toggling classes on a table's `td`s, just add a single div for each player, and then use javascript to add `margin-left: 10px`, then `margin-left: 20px`, etc for each player movement.
+
+- Include a "setup" screen which asks for each player's name. Place that name next to the player's "racetrack".
+
+- When a player wins, display their total time.
+  - The timer should start once players have entered their name and clicked "Start".
+  - Use timestamps to calculate the total time:
+  
+  ```
+    // Start the clock:
+    var start_time = new Date();
+
+    // Then later, when a player has one:
+    var end_time = new Date();
+    // Calculate the total time:
+    console.log("You won the race in " + (end_time - start_time) + " milliseconds");
+  ```
+
+  - But instead of logging the result, include it in your winner-announcing `h1`.
+
+#### Optional (but fun) features!
 
 - Require alternating keys to make the players move
-- Show a timer and final scores
 - Race against a bot
-- Build a "setup" screen that asks for one or all of:
-	- Players names
-	- Players choice of avatar
-	- Number of players (and support any # of players)
-- Make it pretty! Go wild!
-- All-time leaderboard
-- Don't use a table at all, just CSS!
+- Allow players to pick a color
+- Support any # of players
+

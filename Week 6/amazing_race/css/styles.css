@@ -1,0 +1,10 @@
+table {
+  width: 80%;
+  margin: 10px auto;
+  background-color: grey;
+  height: 50px;
+}
+
+td.active {
+  background-color: black;
+}
