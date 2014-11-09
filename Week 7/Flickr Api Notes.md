@@ -47,18 +47,59 @@ Source: [https://www.flickr.com/services/api/misc.urls.html](https://www.flickr.
 #### Step 5
 Make your loop print out the full URL of the actual photo. Test them out by copy-pasting in your browser!
 
-#### Step 6
+#### Homework
 Take those URLs, and modify your actual `img`s on the page!
 
-- Change the 5 imgs for each player.
-- Player 1 should see dogs, player 2 should see cats
-- Also, add the image URL to the value of the radio tag
+- Change the 5 imgs for the first player.
+- Also, add the image URL to the value of the radio tag.
 - Make sure the actual avatar works on the board!
 
+Here's the code to pull in images of dogs:
+
+	```
+    function buildFlickrUrl(p) {
+      var url = "https://farm";
+      url += p.farm;
+      url += ".staticflickr.com/";
+      url += p.server;
+      url += "/";
+      url += p.id;
+      url += "_";
+      url += p.secret;
+      url += ".jpg";
+
+      return url;
+    }
+    
+    $(document).ready(function() {
+
+      var flickrUrl = "https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&api_key=4ef070a1a5e8d5fd19faf868213c8bd0&nojsoncallback=1&text=dog";
+      
+      $.get(flickrUrl, function(response) { 
+        // Loop through all photos in response.photos.photo
+        // call console.log(some_photo.id);
+        for(var i = 0; i < 5; i++) {
+          var photoUrl = buildFlickrUrl(response.photos.photo[i]);
+          $("img").eq(i).attr('src', photoUrl);
+          $("input.player-1-avatar").eq(i).val(photoUrl);
+        }
+        //Note, this only works for the first player.
+	  });
+    
+   	  // The rest of your code below...
+    ```
+
+Your homework is to make this pull in images of... anything!
+
+- Add a "search" input, and link to press to actually call the search.
+	- **Don't add a Search `<button>` tag, use a `<a>` tag**
+	- A button tag will cause the form to submit!
+- Add a `.click` listener to the Search link, which:
+	- Grabs the value from the search input
+	- Makes the `$.get` call for the flickr API, using the search term in place of `dog`.
+- Make sure the avatar actually works on the board!
+
 #### Advanced
-Add a search input, and search button, for each player. On click, query the flickr API for matching images based on the search term, and show the first 5 options.
 
-Plug it all in!
-
-#### Maybe
-Go over JSONP.
+- Add another search bar for player 2!
+- Integrate into your own game!
