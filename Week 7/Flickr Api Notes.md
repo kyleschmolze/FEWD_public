@@ -56,7 +56,6 @@ Take those URLs, and modify your actual `img`s on the page!
 
 Here's the code to pull in images of dogs:
 
-	```
     function buildFlickrUrl(p) {
       var url = "https://farm";
       url += p.farm;
@@ -87,7 +86,6 @@ Here's the code to pull in images of dogs:
 	  });
     
    	  // The rest of your code below...
-    ```
 
 Your homework is to make this pull in images of... anything!
 
