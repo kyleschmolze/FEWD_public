@@ -101,3 +101,8 @@ Your homework is to make this pull in images of... anything!
 
 - Add another search bar for player 2!
 - Integrate into your own game!
+
+#### Super advanced
+
+- Find and integrate any other API into your game.
+
