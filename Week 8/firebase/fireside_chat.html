@@ -27,6 +27,8 @@
           </div>
           <form class='newMessageForm'>
             <input type='text' placeholder='Chat here...' class='newMessage'>
+            <!-- If you're ready to handle different message types, uncomment the radios below -->
+            <!--
             <label>
               <input type='radio' name='messageType' value='text' checked='checked'> Text
             </label>
@@ -36,14 +38,13 @@
             <label>
               <input type='radio' name='messageType' value='image'> Image
             </label>
+            -->
             <button>Submit</button>
           </form>
         </div>
         <div class='sidebar'>
           <strong>Users:</strong>
           <div class='users'></div>
-          <a href='javascript:void(0);' class='clearMessages'>Clear msgs</a>
-          <a href='javascript:void(0);' class='clearUsers'>Clear users</a>
         </div>
       </div>
     </div>
