@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+div.container {
+  margin: 30px 10px;
+}
+
+table.events {
+  margin-top: 10px;
+  width: 100%;
+}
+
+table.events th { 
+  text-align: left;
+}
+
+table.events img {
+  height: 50px;
+  border-radius: 9999px;
+}
