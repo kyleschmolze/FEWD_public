@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+div.container {
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+form.signIn {
+  padding-top: 100px;
+  text-align: center;
+}
+
+form.signIn input {
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+div.app {
+  display: none;
+}
+
+div.chatroom {
+  width: 80%;
+  float: left;
+}
+
+div.users {
+  padding: 0 20px;
+  width: 20%;
+  float: left;
+}
+
+div.messages {
+  height: 400px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  padding: 20px 20px 0;
+}
+
+div.messages img {
+  max-width: 100%;
+}
+
+input.newMessage {
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #777;
+  width: 100%;
+}
+
+form.newMessageForm label {
+  width: 33.3333%;
+  float: left;
+  padding: 10px 0;
+  text-align:center;
+}
+
+form.newMessageForm button {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid red;
+  background: white;
+  border-radius: 2px;
+}
