@@ -74,4 +74,8 @@ $(document).ready(function() {
     firebaseMessages.remove();
   });
 
+  $(".clearUsers").click(function() {
+    firebaseUsers.remove();
+  });
+
 });
