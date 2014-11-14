@@ -29,10 +29,17 @@ div.chatroom {
   float: left;
 }
 
-div.users {
-  padding: 0 20px;
+div.sidebar {
   width: 20%;
   float: left;
+  padding-left: 20px;
+}
+
+a.clearMessages {
+  display: block;
+  padding: 8px;
+  background: #eee;
+  text-align: center;
 }
 
 div.messages {
@@ -43,6 +50,8 @@ div.messages {
 }
 
 div.messages img {
+  display: block;
+  margin-top: 5px;
   max-width: 100%;
 }
 

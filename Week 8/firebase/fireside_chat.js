@@ -48,8 +48,7 @@ $(document).ready(function() {
 
     $(".messages").append(" \
       <div class='message'> \
-        <strong> " + message.name + " said: </strong> \
-        <p> " + content + "</p> \
+        <p> <strong> " + message.name + ": </strong> " + content + "</p> \
       </div> \
     ");
     if($(".messages").is(":visible")) {
@@ -69,6 +68,10 @@ $(document).ready(function() {
         $(".users").append(" <p> " + user.name + "</p> ");
       }
     }
+  });
+
+  $(".clearMessages").click(function() {
+    firebaseMessages.remove();
   });
 
 });
