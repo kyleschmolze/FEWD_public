@@ -1,6 +1,24 @@
 function refresh() {
-  console.log("This function doesn't do much yet!");
-
+  $("table.events tbody").html('');
+  var groupmuseUrl = 'https://www.groupmuse.com/events.json?city_name='+$(".city").val();
+  $.get(groupmuseUrl, function(response) {
+    for(var i = 0; i < response.length; i++) {
+      $("table.events tbody").append(
+        "<tr>" +
+          "<td><img src='" + response[i].user.avatar_thumb + "'></td>" + 
+          "<td>" + response[i].user.name + "</td>" + 
+          "<td>" + 
+            "<a href='" +  response[i].url + "'>" +
+              response[i].title + 
+            "</a>" +
+          "</td>" + 
+          "<td>" + response[i].starts_at_date + "</td>" + 
+          "<td>" + response[i].city + ', ' + response[i].state + "</td>" + 
+        "</tr>"
+      );
+    }
+  });
+  // When it returns, console.log(response);
   // As a code-along, we shall:
   // 0. Make API call to https://www.groupmuse.com/events.json
   // 1. console.log response, response[0]
@@ -27,4 +45,20 @@ $(document).ready(function() {
 
   // Call it once on page load
   refresh();
+
+  var image = $(".img-container img");
+  var body = $("body")
+  $(document).scroll(function() {
+    var top = body.scrollTop() / 2;
+    image.css('transform', 'translate(0, ' + top + 'px)');
+    if(top > 70) {
+      image.css('opacity', (170-top)/100);
+    }
+  })
 });
+
+
+
+
+
+

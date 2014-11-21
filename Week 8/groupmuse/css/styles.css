@@ -8,6 +8,15 @@ div.container {
   margin: 30px 10px;
 }
 
+div.img-container {
+	max-height: 400px;
+	overflow: hidden;
+	background: black;
+}
+
+div.img-container img {
+	position: relative;
+}
 table.events {
   margin-top: 10px;
   width: 100%;

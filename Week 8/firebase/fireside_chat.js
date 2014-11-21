@@ -10,12 +10,14 @@ $(document).ready(function() {
   firebaseMessages.on('child_added', function(snapshot) {
     var message = snapshot.val();
     console.log(message);
-
-    // We need to append the message into the .messages div here!
-    /////////////////
-    // YOUR CODE HERE
-    /////////////////
-
+    message.text // "Hello everybody!"
+    message.name // "Nathan"
+    $(".messages").append(
+      "<p>" +
+        "<strong>" + message.name + ":</strong> " + 
+        message.text + 
+      "</p>"
+    );
 
     // Leave this guy alone:
     // Whenever a new message comes in, scroll down the .messages div to the bottom
