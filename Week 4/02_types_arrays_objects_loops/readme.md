@@ -91,6 +91,8 @@ Arrays are great for:
 * Enumerating data
 * Quickly reordering data 
 
+Like this:
+
 	var friends = ['Moe', 'Larry', 'Curly'];
 	=> ['Moe', 'Larry', 'Curly']
 
