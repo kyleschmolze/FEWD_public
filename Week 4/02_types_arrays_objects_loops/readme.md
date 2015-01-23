@@ -221,7 +221,10 @@ Notes:
 	obj2 = { "key": "value" }
 	```
 	
-Note: All arrays come with a (kind of hidden) 'length' key, which contains the number of elements in the array. How do you ask for the length of an array?
+
+### Dot notation vs. Bracket notation
+
+All arrays come with a (kind of hidden) 'length' key, which contains the number of elements in the array. How do you ask for the length of an array? What are the two ways to do it?
 
 ## Exercise: John Doe
 
