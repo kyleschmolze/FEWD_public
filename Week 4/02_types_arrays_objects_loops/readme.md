@@ -174,7 +174,7 @@ Push and pop are only two methods you can call on an array, there are dozens mor
 
 ## Objects
 
-Ok, here we go: **THE LAST TYPE**. This one is super awesome, I promise. *Objects* are like arrays, except instead of an ordered list of elements, *Objects* are simply key-value pairs:
+Ok, here we go: **THE LAST TYPE**. This one is super awesome, I promise. *Objects* are like arrays, except instead of an ordered list of elements, *Objects* are more like a dictionary. You use a *key* to look up a *value*. Sometimes people call these things *key-value pairs*. It looks like this:
 
 	var house = {
 		bedrooms: 4,
@@ -183,12 +183,10 @@ Ok, here we go: **THE LAST TYPE**. This one is super awesome, I promise. *Object
 		city: "Boston"
 	}
 	
-	// You can use array-style syntax:
 	console.log( house['bedrooms'] )
 	==> 4
 
-	// Or a new syntax that's only for objects:
-	console.log( house.color )
+	console.log( house['color'] )
 	==> "pink"
 	
 Notes:
@@ -212,17 +210,18 @@ Notes:
 	obj[6.7]
 	==> 'somewhere between 6 and 7'
 	
-	obj.normalKey
+	obj['normalKey']
 	==> 'normalValue'
 	```
 	
-	* There is a useful shorthand for when you use Strings as keys. These two objects are equivalent:
+	* What is the data type of the keys in this example? Why is that weird?
 
 	```
 	obj1 = { key: "value" }
 	obj2 = { "key": "value" }
 	```
 	
+Note: All arrays come with a (kind of hidden) 'length' key, which contains the number of elements in the array. How do you ask for the length of an array?
 
 ## Exercise: John Doe
 
@@ -230,7 +229,7 @@ Let's say we had some data about this guy John:
 
 	John, Doe, 36, 1234 Park St, San Francisco, CA
 
-How would you represent this data as an object? (Hint: Think about breaking it down into things like firstname, lastname, age, etc.) Write up that object 
+How would you represent this data as an object? (Hint: Think about breaking it down into things like firstname, lastname, age, etc.) Write up that object.
  
 **Advanced:**
 
@@ -238,9 +237,9 @@ What if you had 5 people? Maybe you should think about using an array, too...
 
 	John, Doe, 36, 1234 Park St, San Francisco, CA
 	Moe, Doe, 31, 1234 Park St, San Francisco, CA
-    Larry, Doe, 36, 1234 Spark St, San Francisco, CA
-    Curly, Doe, 36, 1239 Park St, San Francisco, CA
-    Jane, Doe, 32, 1239 Spark St, San Francisco, CA
+	Larry, Doe, 36, 1234 Spark St, San Francisco, CA
+	Curly, Doe, 36, 1239 Park St, San Francisco, CA
+	Jane, Doe, 32, 1239 Spark St, San Francisco, CA
 
 * How would you ask for the 3rd person's age?
 
