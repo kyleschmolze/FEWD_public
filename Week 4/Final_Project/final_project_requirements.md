@@ -45,8 +45,6 @@ Your instructional team will provide feedback on how well you execute best pract
 
 *	__Clean And Readable Code__. The instructional team should be able to read and follow code easily.  Maintain clean and readable code including: consistent indentation, code commenting (e.g. when closing ```<div>``` tags, demarcating sections of code, describing possibly ambiguous code choices) and use proper and consistent naming conventions.
 
-*	__Search Engine Optimization (SEO)__. Implement SEO best practices related to HTML markup, and content optimization.
-
 *	__Avoid deprecated tags__. Uses best practices and build using supported HTML and CSS tags.
 
 ##GRADING
