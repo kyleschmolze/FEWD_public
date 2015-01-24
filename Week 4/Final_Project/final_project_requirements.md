@@ -34,14 +34,6 @@ We encourage you to exercise your creativity; instructors will validate feasibil
 	*	Make use of JavaScript/jQuery events to add interactivity to the page. 
 
 
-##MILESTONES
-
-|Milestone #|Due Date| Deliverable|
-|:-------|:-----------|:--------|
-| __Milestone 1__ | Week 06 | Project Proposal / Wireframes|
-| __Milestone 2__ | Week 07 | Pseudo Code |
-| __Milestone 3__ | Week 08 | First Draft|
-
 
 ##DELIVERABLES
 
