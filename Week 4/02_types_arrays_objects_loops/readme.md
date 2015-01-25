@@ -177,16 +177,16 @@ Push and pop are only two methods you can call on an array, there are dozens mor
 Ok, here we go: **THE LAST TYPE**. This one is super awesome, I promise. *Objects* are like arrays, except instead of an ordered list of elements, *Objects* are more like a dictionary. You use a *key* to look up a *value*. Sometimes people call these things *key-value pairs*. It looks like this:
 
 	var house = {
-		bedrooms: 4,
-		bathrooms: 1,
-		color: "pink",
-		city: "Boston"
+		"bedrooms": 4,
+		"bathrooms": 1,
+		"color": "pink",
+		"city": "Boston"
 	}
 	
-	console.log( house['bedrooms'] )
+	console.log( house["bedrooms"] )
 	==> 4
 
-	console.log( house['color'] )
+	console.log( house["color"] )
 	==> "pink"
 	
 Notes:
@@ -201,7 +201,7 @@ Notes:
 	obj = { 
 		5: 'certainly not the fifth element!',
 		6.7: 'somewhere between 6 and 7',
-		normalKey: 'normalValue'
+		'normalKey': 'normalValue'
 	}
 	
 	obj[5]
