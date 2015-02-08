@@ -51,11 +51,13 @@ Here are the required features to be completed for homework this week:
 
 - Announce the winner in an `h1` on the page.
 - Write some custom CSS, make it look cool!
+- Include a "setup" screen which asks for each player's name. Place that name next to the player's "racetrack".
+  - To do this, you can create a div which contains two inputs and a submit button. Make sure the table is hidden in CSS to start. When the button is clicked, you'll need a function which hides the div, then shows the table, then pulls the names out of the two inputs, and then puts them onto the page next to the board.
+
+#### Optional (but fun) features!
+
 - Don't use a table at all.
   - Instead of toggling classes on a table's `td`s, just add a single div for each player, and then use javascript to add `margin-left: 10px`, then `margin-left: 20px`, etc for each player movement.
-
-- Include a "setup" screen which asks for each player's name. Place that name next to the player's "racetrack".
-
 - When a player wins, display their total time.
   - The timer should start once players have entered their name and clicked "Start".
   - Use timestamps to calculate the total time:
@@ -69,11 +71,8 @@ Here are the required features to be completed for homework this week:
     // Calculate the total time:
     console.log("You won the race in " + (end_time - start_time) + " milliseconds");
   ```
-
+  
   - But instead of logging the result, include it in your winner-announcing `h1`.
-
-#### Optional (but fun) features!
-
 - Require alternating keys to make the players move
 - Race against a bot
 - Allow players to pick a color
